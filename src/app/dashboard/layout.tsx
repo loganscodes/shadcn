@@ -6,8 +6,10 @@ import Link from "next/link";
 const links = [
     { name: "accordion", href: "accordion" },
     { name: "alert", href: "alert" },
-    { name: "button", href: "button"}
-];
+    { name: "button", href: "button"},
+    { name: "dialog", href: "dialog"},
+    { name: "badge", href: "badge" }
+].sort((a, b) => a.name.localeCompare(b.name));
 
 
 export default function DashboardLayout({ children } : { children: React.ReactNode; }) {
